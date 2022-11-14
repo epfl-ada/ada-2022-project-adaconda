@@ -1,0 +1,35 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black-jupyter
+        name: black-jupyter
+        args: # arguments to configure black
+          - --line-length=150
+          - --include='\.pyi?$'
+
+          # these folders wont be formatted by black
+          - --exclude="""\.git |
+            \.__pycache__|
+            \.hg|
+            \.mypy_cache|
+            \.tox|
+            \.venv|
+            _build|
+            buck-out|
+            build|
+            dist"""
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.5.3
+    hooks:
+  #     - id: nbqa-flake8
+      - id: nbqa-isort
+        args: ["--float-to-top"]
+  - repo: local
+    hooks:
+      - id: jupyter-nb-clear-output
+        name: jupyter-nb-clear-output
+        files: \.ipynb$
+        stages: [commit]
+        language: system
+        entry: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace --ClearMetadataPreprocessor.enabled=True
