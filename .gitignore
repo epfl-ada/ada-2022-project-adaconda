@@ -2,6 +2,9 @@
 /data/*
 !/data/ada_west_youniverse/
 
+#Ignore DS files
+**.DS_Store
+
 # Ignore IDE specific files and directories
 **.idea/
 **.vscode/
