@@ -9,7 +9,11 @@ BRUNO Etienne: etiene.bruno@epfl.ch <br/>
 FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
+
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
+Since its launch in 2015, Youtube became one of the most popular video sharing platform on the internet. Thanks to this popularity, 
+
+
 
 ## Reasearch Question:
 - What is the evolution of the number of videos on Youtube within the study period ? Among all these videos, what is the proportion of videos disussing about sport ? Can we see an infatuation of the sport videos, and more precisely about basketball ?
