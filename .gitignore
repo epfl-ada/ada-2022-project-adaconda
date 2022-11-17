@@ -1,8 +1,10 @@
 # Ignore data folder
 /data/*
 !/data/ada_west_youniverse/
-!/data/espn.sqlite
-!/data/nba_api.sqlite
+
+/databases/*
+!/databases/espn.sqlite
+!/databases/nba_api.sqlite
 
 #Ignore DS files
 **.DS_Store
