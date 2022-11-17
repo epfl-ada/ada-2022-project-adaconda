@@ -30,6 +30,10 @@ Since its launch in 2015, Youtube became one of the most popular video sharing p
 - Can we predict the results of a team thanks to it’s popularity ?
 - Can we predict the player’s transfers based on their popularity ?
 - Is there seasonality in the basketball videos ?
+- Are NBA fans following a single team or all of them ?
+- How do the fans react to a bad performance of a team ? 
+- How to develop a Fanbase on Youtube ? 
+- Are small market teams fans more loyal than big market teams ? 
 
 
 ## Additional datasets
