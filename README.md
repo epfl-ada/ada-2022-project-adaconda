@@ -1,11 +1,11 @@
-# Applied Data Analysis - Project ADACONDA - 2023-2023
+# Applied Data Analysis - Project ADACONDA - 2022-2023
 
 The purpose of this project is to analyse the [Youniverse](https://zenodo.org/record/4650046) database and to measure the impact of important NBA events on Youtube videos.
 
 
 ## Team Members
 ABI FADEL Zad: zad.abifadel@epfl.ch <br/>
-ADEYE ABiola: abiola.adeye@epfl.ch <br/>
+ADEYE Abiola: abiola.adeye@epfl.ch <br/>
 BRUNO Etienne: etiene.bruno@epfl.ch <br/>
 FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
