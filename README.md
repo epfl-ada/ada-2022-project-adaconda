@@ -2,15 +2,19 @@
 
 The purpose of this project is to analyse the [Youniverse](https://zenodo.org/record/4650046) database and to measure the impact of important NBA events on Youtube videos.
 
+
 ## Team Members
 ABI FADEL Zad: zad.abifadel@epfl.ch <br/>
 ADEYE ABiola: abiola.adeye@epfl.ch <br/>
 BRUNO Etienne: etiene.bruno@epfl.ch <br/>
 FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
-## Abstract
-With the rise of Youtube since 2005, the number of videos available on the internet tremendouslz grew. Youtube became a source for all kind od topics. This project intends to investigate the correlation between 
 
+## Abstract
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind od topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. Finally, in a third part, 
+
+
+We know that different audiences of different categories require specific treatment. Therefore, we first explore the entire dataset on a surface level before focusing on a handful of categories in our preliminary analysis to identify a possible gap with the most potential for a young person to become a renowned YouTuber. By investigating the key(s) to success we want to emphasize what is necessary with respect to commitment and volume to gain subscriptions and likes.
 
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
 Since its launch in 2015, Youtube became one of the most popular video sharing platform on the internet. Thanks to this popularity, 
@@ -18,7 +22,7 @@ Since its launch in 2015, Youtube became one of the most popular video sharing p
 
 
 ## Reasearch Question:
-- What is the evolution of the number of videos on Youtube within the study period ? Among all these videos, what is the proportion of videos disussing about sport ? Can we see an infatuation of the sport videos, and more precisely about basketball ?
+- What is the evolution of the number of videos on Youtube within the study period ? Among all these videos, what is the proportion of videos discussing about sport ? Can we see an infatuation of the sport videos, and more precisely about basketball ?
 - What the impact of large sport events and result on Youtube video interactions ?
 - Is there a tendency in the length of sport videos (and of NBA related videos) ?
 - How does the NBA calendar impact NBA videos on youtube ?
@@ -43,8 +47,12 @@ We used addional API to get infornation we can link to the Youniverse dataset.
   - [NBA API] (https://pypi.org/project/nba-api/) allows to obtain about game data (points, matches dates, teams info (nicknames, abbreviations, foundation year)...),
   - [Google Trend API] () giving popularity data
   - Scrapping from wikipedia to obtain, using Beautiful Soup, stadium data (location, attendance)
-  - 
+With this information, we have create a new SQL database hosted on our computer. This database is then used to query any information related to the performances of the NBA teams. This is mostly used in the second part of the project where we investigate the relation between teams' performances and the popularity of NBA videos on youtube.
 
+For the example, our largest table is called `game_data` and has the following columns:
+| Attendance | Time | Visitor | V PTS | Home | H PTS | Playoffs ? | V Pop | H Pop | Last Five | Capacity | Curr win % | Day of the week | Month | Match-ups | Rivalry | LS Win % |
+
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 
 List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible.
