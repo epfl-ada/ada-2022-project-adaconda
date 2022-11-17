@@ -51,8 +51,7 @@ With this information, we have create a new SQL database hosted on our computer.
 
 For the example, our largest table is called `game_data` and has the following columns:
 | Attendance | Time | Visitor | V PTS | Home | H PTS | Playoffs ? | V Pop | H Pop | Last Five | Capacity | Curr win % | Day of the week | Month | Match-ups | Rivalry | LS Win % |
-
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 
 List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible.
