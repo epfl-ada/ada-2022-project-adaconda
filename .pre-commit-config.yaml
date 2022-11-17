@@ -19,12 +19,12 @@ repos:
             buck-out|
             build|
             dist"""
-  - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.5.3
-    hooks:
+  # - repo: https://github.com/nbQA-dev/nbQA
+  #   rev: 1.5.3
+  #   hooks:
   #     - id: nbqa-flake8
-      - id: nbqa-isort
-        args: ["--float-to-top"]
+  #     - id: nbqa-isort
+  #       args: ["--float-to-top"]
   - repo: local
     hooks:
       - id: jupyter-nb-clear-output
