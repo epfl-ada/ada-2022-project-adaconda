@@ -9,6 +9,8 @@ BRUNO Etienne: etiene.bruno@epfl.ch <br/>
 FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
+With the rise of Youtube since 2005, the number of videos available on the internet tremendouslz grew. Youtube became a source for all kind od topics. This project intends to investigate the correlation between 
+
 
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
 Since its launch in 2015, Youtube became one of the most popular video sharing platform on the internet. Thanks to this popularity, 
