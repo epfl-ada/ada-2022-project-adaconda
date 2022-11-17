@@ -52,6 +52,14 @@ For the example, our largest table is called `game_data` and has the following c
 11676|1990-01-02|Milwaukee Bucks|107|Atlanta Hawks|113|0|2|5|4|16371|0.5185185185185185|Tuesday|January|"frozenset({'Atlanta Hawks'| 'Milwaukee Bucks'})"|0|0.581081081081081
 19938|1990-01-03|Chicago Bulls|93|Cleveland Cavaliers|87|0|17|2|1|20273|0.3333333333333333|Wednesday|January|"frozenset({'Cleveland Cavaliers'| 'Chicago Bulls'})"|1|0.6710526315789473
 
+We also have a table called `teams`that provides details about all NBA teams.
+|full name | abbreviation | nickname | city | state | year_founded |
+|---|---|---|---|---|---|
+Atlanta Hawks|ATL|Hawks|Atlanta|Atlanta|1949
+Boston Celtics|BOS|Celtics|Boston|Massachusetts|1946
+Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
+Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
+
 
 ## Methods
 
