@@ -5,6 +5,7 @@
 /databases/*
 !/databases/espn.sqlite
 !/databases/nba_api.sqlite
+*.sqlite
 
 #Ignore DS files
 **.DS_Store
