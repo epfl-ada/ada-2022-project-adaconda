@@ -16,7 +16,7 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 </p>
 
 
-## Reasearch Question and methodology:
+## Reasearch questions and Methodology:
 
 ### PART 1 : Global analysis of sport videos and NBA videos available on the `Youniverse` dataset.
 - What is the evolution of the number of videos on Youtube within the study period ?
@@ -25,6 +25,10 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 - Is there a tendency in the length of sport videos (and of NBA related videos) ?
 - How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
 - Are baskeball and NBA videos more commented, liked or disliked than other sports ?
+
+> To investigate this first part, we have used Dash to load the datasets. We initially decompressed all gzip files locally to use Dask. With Dask, we hence loaded all `.tsv` file and stored them in `.parquet` file which allows us to get file as light as `.gzip` file but readable by Dask (by contrast with `.gzip` file which are not readable by Dask). Dask allows us to use lazy valuation and to use mutliple cores which means that the variable is not computed until the function is called followed by `.compute()' and when it is computed, it is ditributed on all the allocated cores. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs. All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`.
+> In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries.
+> To investigate this first part, we have used Dash to load the datasets. We initially decompressed all gzip files locally to use Dask. Dask allows us to use lazy valuation which means that the variable is not computed until the function is called followed by `.compute()'. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs.
 
 
 ### PART 2 : Impact of the performances of NBA team.
@@ -71,8 +75,6 @@ Boston Celtics|BOS|Celtics|Boston|Massachusetts|1946
 Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
 Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
-## Methodology
-
 
 ## Proposed timeline
 
@@ -80,6 +82,7 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 ## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
     - Data laoding and pre-processing using dask
+    - 
 - Etienne
     - General analysis on sport videos
     - Tendencies on basketball and NBA videos on Youtube
@@ -88,6 +91,7 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
     - 
 - Zad
     - Data scrapping from website and NBA API
+    - 
 
 
 ## Overview
