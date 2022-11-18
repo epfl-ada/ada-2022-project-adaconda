@@ -12,7 +12,10 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
 <p align="justify">
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind of topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. We finally study how 
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and get more insights on NBA (National Basketball Association) teams popularity on Youtube. Based on the Youniverse dataset and on an NBA dataset constructed with the web scrapping of multiple websites and other API's, our analysis aim to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions. 
+    In a first part, we try to get a global view of the Youniverse dataset and mainly the evolution of sport videos and more precisely NBA related videos. Therefore, we will examine the overall tendencies for views, comments and likes that appear within the subset of NBA related videos on Youtube compared to other sport videos. 
+    In a further analysis we focus on how NBA videos correlate with teams' results, victory percentage and other important events of NBA calendar. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. 
+    Finally, we study how players and internal strategies within NBA teams interact with their populatity on Youtube. This last point permits us to advise teams on what strategical decisions to take to get more fans on Youtube.
 </p>
 
 
@@ -40,7 +43,7 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 
 
 ### PART 3 : In depth analysis within NBA teams
-- Are some players more popular than their own team ?
+- Are some players more popular than their own team ? Is it the popularity of the players that improves the popularity of a team ? 
 - How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
 - Is the championship MVP always the most popular player ? (MVP : Most Valueable Player) 
 
