@@ -23,8 +23,10 @@ repos:
   #   rev: 1.5.3
   #   hooks:
   #     - id: nbqa-flake8
-  #     - id: nbqa-isort
-  #       args: ["--float-to-top"]
+  #       args:
+  #         - --ignore=E501  # line too long
+     # - id: nbqa-isort
+      # args: ["--float-to-top"]
   - repo: local
     hooks:
       - id: jupyter-nb-clear-output
