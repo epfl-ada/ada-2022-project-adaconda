@@ -11,12 +11,12 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 
 ## Abstract
-<p align="justify">
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and get more insights on NBA (National Basketball Association) teams popularity on Youtube. Based on the Youniverse dataset and on an NBA dataset constructed with the web scrapping of multiple websites and other API's, our analysis aim to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions. \n
+
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and get more insights on NBA (National Basketball Association) teams popularity on Youtube. Based on the Youniverse dataset and on an NBA dataset constructed with the web scrapping of multiple websites and other API's, our analysis aim to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions.
     In a first part, we try to get a global view of the Youniverse dataset and mainly the evolution of sport videos and more precisely NBA related videos. Therefore, we will examine the overall tendencies for views, comments and likes that appear within the subset of NBA related videos on Youtube compared to other sport videos. 
     In a further analysis we focus on how NBA videos correlate with teams' results, victory percentage and other important events of NBA calendar. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. 
     Finally, we study how players and internal strategies within NBA teams interact with their populatity on Youtube. This last point permits us to advise teams on what strategical decisions to take to get more fans on Youtube.
-</p>
+
 
 
 ## Reasearch questions and Methodology:
