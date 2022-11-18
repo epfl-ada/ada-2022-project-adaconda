@@ -17,6 +17,12 @@ In a first part, we try to get a global view of the Youniverse dataset and mainl
 In a further analysis we focus on how NBA videos correlate with teams' results, victory percentage and other important events of NBA calendar. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset.  
 Finally, we study how players and internal strategies within NBA teams interact with their populatity on Youtube. This last point permits us to advise teams on what strategical decisions to take to get more fans on Youtube.
 
+## NBA overview
+The **National Basketball Association (NBA)** is the world's most famous basketball league. Thirty American and Canadian teams compete amongst each other during an 82 game-long **regular season**.  
+At the end of the regular season, the top 8 teams in each conference (East & West) participate in a knockout tournament famously called the **playoffs**.  
+At the end of the season, the winning team is crowned as the championship winner, a single player is awarded the **Most Valuable Player (MVP)** trophy, and an all-star team with the bes players from each conference is formed for an exhibition game during the **All-Star** weekend.  
+The NBA season usually starts around October/November and ends around April/June/July. In addition to that, the playoffs start date is usually in May.
+  
 
 
 ## Reasearch questions and Methodology:
