@@ -44,6 +44,8 @@ The NBA season usually starts around October/November and ends around April/June
 > All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
 
 
+> We explored the option of converting the Youniverse dataset to a local or hosted SQL database. In order to do that we loaded the data by chunks and saved them to the database. This approach requires a lot of storage (approximately 500 GB of data). Even though this approach is appealing because it allows us to build indices and create views in order to make our queries efficient, we decided to go against it and to work with DASK.
+
 ### PART 2 : Impact of the performances of NBA teams.
 - What is the impact of the main NBA matches and results on Youtube video interactions ?
 - How do the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
