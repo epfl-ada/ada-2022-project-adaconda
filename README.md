@@ -11,18 +11,27 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 
 ## Abstract
-<p align="justify">
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind od topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. Finally, in a third part, ...
-</p>
+
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and get more insights on NBA (National Basketball Association) teams popularity on Youtube. Based on the Youniverse dataset and on an NBA dataset constructed with the web scrapping of multiple websites and other API's, our analysis aim to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions.  
+In a first part, we try to get a global view of the Youniverse dataset and mainly the evolution of sport videos and more precisely NBA related videos. Therefore, we will examine the overall tendencies for views, comments and likes that appear within the subset of NBA related videos on Youtube compared to other sport videos.  
+In a further analysis we focus on how NBA videos correlate with teams' results, victory percentage and other important events of NBA calendar. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset.  
+Finally, we study how players and internal strategies within NBA teams interact with their populatity on Youtube. This last point permits us to advise teams on what strategical decisions to take to get more fans on Youtube.
+
+## NBA overview
+The **National Basketball Association (NBA)** is the world's most famous basketball league. Thirty American and Canadian teams compete amongst each other during an 82 game-long **regular season**.  
+At the end of the regular season, the top 8 teams in each conference (East & West) participate in a knockout tournament famously called the **playoffs**.  
+At the end of the season, the winning team is crowned as the championship winner, a single player is awarded the **Most Valuable Player (MVP)** trophy, and an all-star team with the bes players from each conference is formed for an exhibition game during the **All-Star** weekend.  
+The NBA season usually starts around October/November and ends around April/June/July. In addition to that, the playoffs start date is usually in May.
+  
 
 
 ## Reasearch questions and Methodology:
 
 ### PART 1 : Global analysis of sport videos and NBA videos available on the `Youniverse` dataset.
 - What is the evolution of the number of videos on Youtube within the study period ?
-    - Among all these videos, what is the proportion of videos discussing about sport ?
-    - Can we see an infatuation of the sport videos, and more precisely about basketball ?
+    - Among these videos, what is the proportion of videos discussing about sport ?
 - Is there a tendency in the length of sport videos (and of NBA related videos) ?
+- Can we see an infatuation in the popularity of sports videos, and more precisely about NBA ?
 - How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
 - Are baskeball and NBA videos more commented, liked or disliked than other sports ?
 
@@ -31,25 +40,24 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 > In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes.
 
 
-### PART 2 : Impact of the performances of NBA team.
-- What the impact of the main NBA matches and results on Youtube video interactions ?
-- How do fans react to a bad performance of a team ?
-- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments)
-- Are small market teams fans more loyal than big market teams ? (fans : people frequently interacting with a certain NBA team on Youtube)
+### PART 2 : Impact of the performances of NBA teams.
+- What is the impact of the main NBA matches and results on Youtube video interactions ?
+- How do the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
+- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments) 
+- Are NBA fans usually following a single team or the whole championship ?
+- Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities sush as New York/Chicago, where as small market teams usually represents small cities or cities where bascketball is not an important sport such as New Orleans/Memphis)
 
 
-### PART 3 : In depth analysis within teams
-- Are some players more popular than their own team ?
-- Interaction of fans with NBA Youtube videos
-    - How do the fans react to a bad performance of a team ?
-    - Are NBA fans following a single team or all of them ?
+### PART 3 : In depth analysis within NBA teams
+- Are some players more popular than their own team ? Is it the popularity of the players that improves the popularity of a team ? 
 - How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
-- Is the MVP always the most popular player ?
+- Is the championship MVP always the most popular player ? (MVP : Most Valueable Player) 
 
-- If we have time:
+- Additional questions :
     - Is there a fan base in each NBA Team ?
-    - Are NBA team following a single team or all of them ?
-    - Can we predict the player’s transfers based on their popularity ?
+    - Is the popularity of a player more related to his level or to the popularity of his team ? 
+    - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Bascketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
+    - Can we predict the players’ transfers based on their popularity ?
 
 
 ## Additional datasets
@@ -79,7 +87,13 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
 
 ## Proposed timeline
-
+|Date | Objective|
+|---|---|
+| 25-11-2022 | Implementation of parts I and II ready |
+| 02-12-2022 | Implementation and anaylis of parts I and II |
+| 09-12-2022 | Implementation of part III |
+| 16-12-2022 | Website construction and story telling |
+| 23-12-2022 | M3 ready and submission |
 
 ## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
