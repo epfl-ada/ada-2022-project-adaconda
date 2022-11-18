@@ -28,7 +28,7 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 
 > To investigate this first part, we have used Dash to load the datasets. We initially decompressed all gzip files locally to use Dask. With Dask, we hence loaded all `.tsv` file and stored them in `.parquet` file which allows us to get file as light as `.gzip` file but readable by Dask (by contrast with `.gzip` file which are not readable by Dask). Dask allows us to use lazy valuation and to use mutliple cores which means that the variable is not computed until the function is called followed by `.compute()` and when it is computed, it is ditributed on all the allocated cores. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs. All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
 
-> In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask.
+> In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes.
 
 
 ### PART 2 : Impact of the performances of NBA team.
@@ -60,12 +60,14 @@ We used addional API to get infornation we can link to the Youniverse dataset.
 With this information, we have create a new SQL database hosted on our computer. This database is then used to query any information related to the performances of the NBA teams. This is mostly used in the second part of the project where we investigate the relation between teams' performances and the popularity of NBA videos on youtube.
 
 For the example, our largest table is called `game_data` and has the following columns:
-| Attendance | Time | Visitor | V PTS | Home | H PTS | Playoffs ? | V Pop | H Pop | Last Five | Capacity | Curr win % | Day of the week | Month | Match-ups | Rivalry | LS Win % |
+| visitor | visitor_points | home | home_points | overtime | attendance | arena | time | season | last_five | seasson_high_attendance | curr_season_win_pct | last_5 | last_10 | last_15 | previous_season_win_pct | previous_regular_season_win_pct
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-12884|1990-01-02|Miami Heat|95|Portland Trail Blazers|119|0|2|2|3|12884|0.6923076923076923|Tuesday|January|"frozenset({'Portland Trail Blazers'| 'Miami Heat'})"|0|0.4533333333333333
-15025|1990-01-02|Utah Jazz|120|Golden State Warriors|133|0|4|3|3|15025|0.6153846153846154|Tuesday|January|"frozenset({'Utah Jazz'| 'Golden State Warriors'})"|0|0.6790123456790124
-11676|1990-01-02|Milwaukee Bucks|107|Atlanta Hawks|113|0|2|5|4|16371|0.5185185185185185|Tuesday|January|"frozenset({'Atlanta Hawks'| 'Milwaukee Bucks'})"|0|0.581081081081081
-19938|1990-01-03|Chicago Bulls|93|Cleveland Cavaliers|87|0|17|2|1|20273|0.3333333333333333|Wednesday|January|"frozenset({'Cleveland Cavaliers'| 'Chicago Bulls'})"|1|0.6710526315789473
+Denver Nuggets|97|Phoenix Suns|102|""|17852|America West Arena|2005-12-02 21:00:00|0|2006|0|18422|0.6428571428571429|5|7||0.7319587628865979
+Atlanta Hawks|94|Phoenix Suns|112|""|16992|America West Arena|2005-12-04 20:00:00|0|2006|0|18422|0.6666666666666666|5|8|10|0.7319587628865979
+Portland Trail Blazers|85|Phoenix Suns|130|""|15102|America West Arena|2005-12-06 21:00:00|0|2006|0|18422|0.6875|5|8|11|0.7319587628865979
+Denver Nuggets|100|Miami Heat|92|""|19896|AmericanAirlines Arena|2005-12-09 19:30:00|0|2006|0|20294|0.5|1|4|8|0.7216494845360825
+New York Knicks|81|Phoenix Suns|85|""|18207|America West Arena|2005-12-09 22:00:00|0|2006|0|18422|0.7222222222222222|5|9|11|0.7319587628865979
+
 
 We also have a table called `teams`that provides details about all NBA teams.
 |full name | abbreviation | nickname | city | state | year_founded |
