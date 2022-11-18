@@ -12,7 +12,7 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
 <p align="justify">
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind od topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. Finally, in a third part, ...
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind od topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. We finally study how 
 </p>
 
 
@@ -79,7 +79,13 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
 
 ## Proposed timeline
-
+|Date | Objective|
+|---|---|
+| 25-11-2022 | Implementation of parts I and II ready |
+| 02-12-2022 | Implementation and anaylis of parts I and II |
+| 09-12-2022 | Implementation of part III |
+| 16-12-2022 | Website construction and story telling |
+| 23-12-2022 | M3 ready and submission |
 
 ## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
