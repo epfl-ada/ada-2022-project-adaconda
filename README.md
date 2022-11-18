@@ -42,11 +42,12 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 ### PART 3 : In depth analysis within teams
 - Are some players more popular than their own team ?
 - How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
-- Is the MVP always the most popular player ?
+- Is the championship MVP always the most popular player ? (MVP : Most Valueable Player) 
 
 - Additional questions :
     - Is there a fan base in each NBA Team ?
-    - Are NBA team following a single team or all of them ?
+    - Is the popularity of a player more related to his level or to the popularity of his team ? 
+    - Are offensive teams, teams that score many points during their matches, more popular than defensive teams ? (i.e. Bascketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
     - Can we predict the player’s transfers based on their popularity ?
 
 
