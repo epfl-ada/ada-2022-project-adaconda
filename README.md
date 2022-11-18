@@ -12,7 +12,7 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
 <p align="justify">
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind od topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. We finally study how 
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became a source for all kind of topics. This project intends to investigate the connection between NBA (National Basketball Association) videos available in our datasets (from 2006 to 2019) and some metrics of these NBA teams. In a first part, we try to get a global view of the dataset and mainly the evolution of sport videos and we compare it this development with the progression of NBA related videos. More precisely, we examine the overall tendencies that appear with time such as duration of sport and basketball videos or the interaction with these videos. In a further analysis we focus on the study of NBA videos and how they correlate with results, victory percentage and important events of NBA teams. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset. We finally study how 
 </p>
 
 
@@ -32,10 +32,10 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 
 
 ### PART 2 : Impact of the performances of NBA team.
-- What the impact of the main NBA matches and results on Youtube video interactions ?
-- How do fans react to a bad performance of a team ?
-- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments)
-- Are small market teams fans more loyal than big market teams ? (fans : people frequently interacting with a certain NBA team on Youtube)
+- What is the impact of the main NBA matches and results on Youtube video interactions ?
+- How does the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
+- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments) 
+- Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities sush as New York/Chicago, where as small market teams usually represents small cities or cities where bascketball is not an important sport such as New Orleans/Memphis)
 
 
 ### PART 3 : In depth analysis within teams
