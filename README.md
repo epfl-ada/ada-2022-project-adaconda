@@ -76,13 +76,6 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
 ## Organization within the team: A list of internal milestones up until project Milestone P3.
 
-ple around the globe. However, studying the platform is difﬁ-cult due to the lack of randomly sampled data and of system-atic ways to query the platform’s colossal catalog. In this pa-per, we present YouNiverse, a large collection of channel andvideo metadata from English-language YouTube. YouNiversecomprises metadata for over 136k channels and 72.9M videospublished between May 2005 and October 2019, as wellas channel-level time-series data of weekly subscriber andview counts. Leveraging channel ranks from socialblade.com,an online service that provides information about YouTube,we are able to assess and enhance the representativeness ofthe sample of channels. Additionally, the dataset also con-tains a table specifying which videos a set of 449M anony-mous users commented on. YouNiverse, publicly availableat https://doi.org/10.5281/zenodo.4650046, will empower thecommunity to do research with and about YouTube.
-
-With the rise of YouTube since 2005, content creators rose to fame with an expanding follower base. Businesses saw this as an opportunity to sponsor their content, exploring marketing potential with creators. Nowadays, sponsorships are a common practice on the platform with many YouTubers making a living off of them.
-
-But this practice does not come without its downsides. Spectators paying for a premium YouTube subscription are often annoyed by the ads that are forced upon them by their favorite YouTubers. Many creators have been accused of promoting services that they do not believe in, or even worse, that may be harmful to their audience.
-
-This project aims to explore the relationship between YouTubers and their sponsors, and to determine whether or not sponsorships are beneficial to content creators. We hope to provide YouTubers with more information about their potential sponsors, and help them make more informed decisions.
 
 
 ## Overview
