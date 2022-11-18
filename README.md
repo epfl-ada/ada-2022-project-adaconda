@@ -71,11 +71,23 @@ Boston Celtics|BOS|Celtics|Boston|Massachusetts|1946
 Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
 Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
+## Methodology
+
+
 ## Proposed timeline
 
 
-## Organization within the team: A list of internal milestones up until project Milestone P3.
-
+## Organization within the team: a list of internal milestones up until project Milestone P3.
+- Abiola
+    - Data laoding and pre-processing using dask
+- Etienne
+    - General analysis on sport videos
+    - Tendencies on basketball and NBA videos on Youtube
+- Sami
+    - Analysis of the impact of the main NBA matches and results on Youtube video interactions
+    - 
+- Zad
+    - Data scrapping from website and NBA API
 
 
 ## Overview
