@@ -1,6 +1,6 @@
 # Applied Data Analysis - Project ADACONDA - 2022-2023
 
-The purpose of this project is to analyse the [Youniverse](https://zenodo.org/record/4650046) database and to measure the impact of important NBA events on Youtube videos.
+The purpose of this project is to analyze the [Youniverse](https://zenodo.org/record/4650046) database and to measure the impact of important NBA events on Youtube videos.
 
 
 ## Team Members
@@ -12,10 +12,10 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 ## Abstract
 
-With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and get more insights on NBA (National Basketball Association) teams popularity on Youtube. Based on the Youniverse dataset and on an NBA dataset constructed with the web scrapping of multiple websites and other API's, our analysis aim to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions.  
-In a first part, we try to get a global view of the Youniverse dataset and mainly the evolution of sport videos and more precisely NBA related videos. Therefore, we will examine the overall tendencies for views, comments and likes that appear within the subset of NBA related videos on Youtube compared to other sport videos.  
-In a further analysis we focus on how NBA videos correlate with teams' results, victory percentage and other important events of NBA calendar. This objective is to measure how key points impact popularity of teams and their videos on the Youniverse dataset.  
-Finally, we study how players and internal strategies within NBA teams interact with their populatity on Youtube. This last point permits us to advise teams on what strategical decisions to take to get more fans on Youtube.
+With the rise of Youtube since 2005, the number of videos available on the internet tremendously grew. Youtube became thus, a source for all kind of topics. This project intends to investigate and obtain insights on NBA (National Basketball Association) teams' popularity on Youtube. Based on the Youniverse dataset *(Ribeiro, Manoel Horta and West Robert)* and on multiple NBA sources (ranging from websites that we scraped and endpoints/APIs that we used), our analysis aims to help NBA teams be more popular on Youtube and use this platform to get useful insights before taking important decisions.  
+In the first part, we try to get a global view of the Youniverse dataset and mainly the evolution of sport videos and more precisely NBA related videos. Therefore, we will examine the overall tendencies for views, comments and likes that appear within the subset of NBA related videos on Youtube compared to other sports videos.  
+In a further analysis, we will focus on how popularity of NBA videos correlate with a teams' results, victory percentage and other important events of the NBA calendar (e.g. star players changing teams, start of the playoffs). This part focuses on the driving forces behind popularity of teams. This popularity will be assessed based on the Youniverse Dataset as well as data from the Google Trends API and attendance numbers for games scraped from the web.
+Finally, we study how players and internal strategies within NBA teams interact with their popularity on Youtube. 
 
 ## NBA overview
 The **National Basketball Association (NBA)** is the world's most famous basketball league. Thirty American and Canadian teams compete amongst each other during an 82 game-long **regular season**.  
@@ -25,7 +25,7 @@ The NBA season usually starts around October/November and ends around April/June
   
 
 
-## Reasearch questions and Methodology:
+## Research questions and Methodology:
 
 ### PART 1 : Global analysis of sport videos and NBA videos available on the `Youniverse` dataset.
 - What is the evolution of the number of videos on Youtube within the study period ?
@@ -33,51 +33,53 @@ The NBA season usually starts around October/November and ends around April/June
 - Is there a tendency in the length of sport videos (and of NBA related videos) ?
 - Can we see an infatuation in the popularity of sports videos, and more precisely about NBA ?
 - How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
-- Are baskeball and NBA videos more commented, liked or disliked than other sports ?
+- Are basketball and NBA videos more commented, liked or disliked than other sports ?
 
-> To investigate this first part, we have used Dash to load the datasets. We initially decompressed all gzip files locally to use Dask. With Dask, we hence loaded all `.tsv` file and stored them in `.parquet` file which allows us to get file as light as `.gzip` file but readable by Dask (by contrast with `.gzip` file which are not readable by Dask). Dask allows us to use lazy valuation and to use mutliple cores which means that the variable is not computed until the function is called followed by `.compute()` and when it is computed, it is ditributed on all the allocated cores. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs. All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
+> To investigate this first part, we have used Dask to load the datasets. We initially decompressed all gzip files locally to use Dask. With Dask, we hence loaded all `.tsv` file and stored them in `.parquet` format which allows us to get files that are as light as the `.gzip` files but readable by Dask (in contrast with `.gzip` files which are not readable by Dask). Dask allows us to use lazy evaluation and to use multiple cores which means that the variable is not computed until the function call is followed by `.compute()` and when it is computed, it is distributed on all the allocated cores. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs. All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
 
-> In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes.
+> **FIXME** **FIXME** **FIXME** **FIXME** In addition to dask, we also investigate the possibility to store all of our data in a local database when we will further get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes. **FIXME** **FIXME** **FIXME** **FIXME** **FIXME**
 
 
 ### PART 2 : Impact of the performances of NBA teams.
 - What is the impact of the main NBA matches and results on Youtube video interactions ?
 - How do the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
-- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments) 
+- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments, attendance numbers and trends on google) 
 - Are NBA fans usually following a single team or the whole championship ?
-- Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities sush as New York/Chicago, where as small market teams usually represents small cities or cities where bascketball is not an important sport such as New Orleans/Memphis)
+- Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities such as New York/Chicago, where as small market teams usually represents small cities or cities where basketball is not an important sport such as New Orleans/Memphis)
 
 
 ### PART 3 : In depth analysis within NBA teams
 - Are some players more popular than their own team ? Is it the popularity of the players that improves the popularity of a team ? 
-- How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
-- Is the championship MVP always the most popular player ? (MVP : Most Valueable Player) 
+- How do NBA teams manage to be more popular ? Is this popularity affecting their results ? 
+- Is the championship MVP always the most popular player? (MVP : Most Valuable Player) 
 
 - Additional questions :
     - Is there a fan base in each NBA Team ?
     - Is the popularity of a player more related to his level or to the popularity of his team ? 
-    - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Bascketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
+    - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Basketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
     - Can we predict the players’ transfers based on their popularity ?
 
 
 ## Additional datasets
-We used addional API to get infornation we can link to the Youniverse dataset.
+Here are the relevant additional APIs we used to get information we can link to the Youniverse dataset.
   - [NBA API](https://pypi.org/project/nba-api/) allows to obtain about game data (points, matches dates, teams info (nicknames, abbreviations, foundation year)...),
   - [Google Trend API](https://pypi.org/project/pytrends/) giving popularity data
-  - Scrapping from wikipedia to obtain, using Beautiful Soup, stadium data (location, attendance)
-With this information, we have create a new SQL database hosted on our computer. This database is then used to query any information related to the performances of the NBA teams. This is mostly used in the second part of the project where we investigate the relation between teams' performances and the popularity of NBA videos on youtube.
+  - Scraping from Wikipedia and other websites to obtain stadium data (location, attendance, ...)
+This information is stored in SQL (SQLite) database hosted on our computer. This database is then used to query any information related to the performances of the NBA teams. This is mostly used in the second part of the project where we investigate the relation between teams' performances and the popularity of NBA videos on youtube.
 
 For the example, our largest table is called `game_data` and has the following columns:
-| visitor | visitor_points | home | home_points | overtime | attendance | arena | time | season | last_five | seasson_high_attendance | curr_season_win_pct | last_5 | last_10 | last_15 | previous_season_win_pct | previous_regular_season_win_pct
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-Denver Nuggets|97|Phoenix Suns|102|""|17852|America West Arena|2005-12-02 21:00:00|0|2006|0|18422|0.6428571428571429|5|7||0.7319587628865979
-Atlanta Hawks|94|Phoenix Suns|112|""|16992|America West Arena|2005-12-04 20:00:00|0|2006|0|18422|0.6666666666666666|5|8|10|0.7319587628865979
-Portland Trail Blazers|85|Phoenix Suns|130|""|15102|America West Arena|2005-12-06 21:00:00|0|2006|0|18422|0.6875|5|8|11|0.7319587628865979
-Denver Nuggets|100|Miami Heat|92|""|19896|AmericanAirlines Arena|2005-12-09 19:30:00|0|2006|0|20294|0.5|1|4|8|0.7216494845360825
-New York Knicks|81|Phoenix Suns|85|""|18207|America West Arena|2005-12-09 22:00:00|0|2006|0|18422|0.7222222222222222|5|9|11|0.7319587628865979
+| visitor | visitor\_points | home | home\_points | overtime | attendance | arena | time | playoffs | season | last\_five | season\_high\_attendance | curr\_season\_win\_pct | last\_5 | last\_10 | last\_15 | previous\_season\_win\_pct | previous\_regular\_season\_win\_pct |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Golden State Warriors | 108 | Cleveland Cavaliers | 85 |  | 20562 | Quicken Loans Arena | 2018-06-08 21:00:00 | 1 | 2018 | 0 | 20562 | 0.5961538461538461 | 1 | 4 | 8 | 0.64 | 0.64 |
+| Golden State Warriors | 110 | Cleveland Cavaliers | 102 |  | 20562 | Quicken Loans Arena | 2018-06-06 21:00:00 | 1 | 2018 | 0 | 20562 | 0.6019417475728155 | 2 | 4 | 9 | 0.64 | 0.64 |
+| Cleveland Cavaliers | 103 | Golden State Warriors | 122 |  | 19596 | Oracle Arena | 2018-06-03 20:00:00 | 1 | 2018 | 0 | 19596 | 0.7128712871287128 | 4 | 7 | 11 | 0.8383838383838383 | 0.8383838383838383 |
+| Cleveland Cavaliers | 114 | Golden State Warriors | 124 | OT | 19596 | Oracle Arena | 2018-05-31 21:00:00 | 1 | 2018 | 0 | 19596 | 0.71 | 3 | 7 | 10 | 0.8383838383838383 | 0.8383838383838383 |
+| Golden State Warriors | 101 | Houston Rockets | 92 |  | 18055 | Toyota Center | 2018-05-28 21:00:00 | 1 | 2018 | 0 | 18476 | 0.7676767676767676 | 2 | 6 | 9 | 0.6559139784946236 | 0.6559139784946236 |
 
 
-We also have a table called `teams`that provides details about all NBA teams.
+
+
+We also have a table called `teams` that provides details about all NBA teams.
 |full name | abbreviation | nickname | city | state | year_founded |
 |---|---|---|---|---|---|
 Atlanta Hawks|ATL|Hawks|Atlanta|Atlanta|1949
@@ -90,14 +92,15 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 |Date | Objective|
 |---|---|
 | 25-11-2022 | Implementation of parts I and II ready |
-| 02-12-2022 | Implementation and anaylis of parts I and II |
+| 02-12-2022 | Implementation and analysis of parts I and II |
 | 09-12-2022 | Implementation of part III |
 | 16-12-2022 | Website construction and story telling |
 | 23-12-2022 | M3 ready and submission |
 
-## Organization within the team: a list of internal milestones up until project Milestone P3.
+## Organization within the team: a list of internal milestones up until project Milestone P3
+All team members contributed to most parts of the project but we will list below the parts of the project they were most involved in
 - Abiola
-    - Data laoding and pre-processing using dask
+    - Data loading and pre-processing using dask
     - 
 - Etienne
     - General analysis on sport videos
@@ -106,7 +109,7 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
     - Analysis of the impact of the main NBA matches and results on Youtube video interactions
     - 
 - Zad
-    - Data scrapping from website and NBA API
+    - Data scraping from website and NBA API
     - 
 
 
