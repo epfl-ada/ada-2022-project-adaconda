@@ -62,7 +62,7 @@ The NBA season usually starts around October/November and ends around April/June
     - Is the popularity of a player more related to his level or to the popularity of his team ? 
     - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Basketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
     - Can we predict the players’ transfers based on their popularity ?
-    - Fans following habits : teams or player 
+    - Do fans follow players or teams?
 
 
 ## Additional datasets
@@ -105,20 +105,20 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 ## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
     - Data loading and pre-processing using Dask
-    - Impact of real NBA calendar and matches on Youtube views (engagement of fans, on both big and snall market teams)
+    - Impact of real NBA calendar and matches on Youtube views (engagement of fans, on both big and small market teams)
     - Loyalty of small teams and big teams 
     - Popularity of the MVP player
 - Etienne
     - General analysis on sport videos
     - Tendencies on basketball and NBA videos on Youtube
-    - Analysis reuslts for offensive and defensive temas 
+    - Analysis results for offensive and defensive teams 
     - Popularity of players versus popularity of teams
 - Sami
     - Analysis of the impact of the main NBA matches and results on Youtube video interactions
     - Reaction of fans following a good / bad match
     - Criteria for a team to be popular
 - Zad
-    - Data scrapping from website and NBA API
+    - Data scraping from website and NBA API
     - Study of the comments, likes and dislikes of NBA related videos.
 
 
