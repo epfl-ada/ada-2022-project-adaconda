@@ -62,6 +62,7 @@ The NBA season usually starts around October/November and ends around April/June
     - Is the popularity of a player more related to his level or to the popularity of his team ? 
     - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Basketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
     - Can we predict the players’ transfers based on their popularity ?
+    - Fans following habits : teams or player 
 
 
 ## Additional datasets
