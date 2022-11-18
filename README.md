@@ -101,20 +101,25 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 | 16-12-2022 | Website construction and story telling |
 | 23-12-2022 | M3 ready and submission |
 
-## Organization within the team: a list of internal milestones up until project Milestone P3
-All team members contributed to most parts of the project but we will list below the parts of the project they were most involved in
+## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
-    - Data loading and pre-processing using dask
-    - 
+    - Data loading and pre-processing using Dask
+    - Impact of real NBA calendar and matches on Youtube views (engagement of fans, on both big and snall market teams)
+    - Loyalty of small teams and big teams 
+    - Popularity of the MVP player
 - Etienne
     - General analysis on sport videos
     - Tendencies on basketball and NBA videos on Youtube
+    - Analysis reuslts for offensive and defensive temas 
+    - Popularity of players versus popularity of teams
 - Sami
     - Analysis of the impact of the main NBA matches and results on Youtube video interactions
-    - 
+    - Reaction of fans following a good / bad match
+    - Criteria for a team to be popular
 - Zad
-    - Data scraping from website and NBA API
-    - 
+    - Data scrapping from website and NBA API
+    - Study of the comments, likes and dislikes of NBA related videos.
+
 
 
 ## Overview
