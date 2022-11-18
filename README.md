@@ -128,8 +128,9 @@ Here's a list of the relevant source files
 
 |Source file | Description|
 |---|---|
-|`1_data_loading_and_pre_processing.ipynb`           | The notebook used to load the data from uncompressed files and save them into parquet files|
-|`2_database_creation.ipynb`           | Notebook to load data and save them into our local SQL Database |
+|`1_data_loading_and_pre_processing.ipynb`           | Notebook used to load the data from uncompressed files and save them into parquet files|
+|`2_google_trends_api_database_creation.ipynb`           | Notebook to load popularity of teams from Google trends API |
+|`2_nba_database_creation.ipynb`           | Notebook to scrape data from NBA websites and APIs and save them into a local SQL (SQLite) Database |
 |`3_data_exploration.ipynb`           | Notebook where the first data exploration is made and the first research questions are answered|
-|`api_nba.ipynb`           | Notebook where we scrapped data from websites and used NBA api to get data about NBA teams and matches |
+|`4_data_case_study.ipynb`           | Notebook where we do a case study comparing impact of winning percentage of Small and Big market teams |
 
