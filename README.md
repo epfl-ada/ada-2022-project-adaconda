@@ -16,25 +16,36 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 </p>
 
 
-## Reasearch Question:
-    - What is the evolution of the number of videos on Youtube within the study period ? Among all these videos, what is the proportion of videos discussing about sport ? Can we see an infatuation of the sport videos, and more precisely about basketball ?
-    - What the impact of large sport events and result on Youtube video interactions ?
-    - Is there a tendency in the length of sport videos (and of NBA related videos) ?
-    - How does the NBA calendar impact NBA videos on youtube ?
-    - How much does the results of a team impact their popularity ? (Popularity of a team is measured directly with the number of videos and of views ?
-    - Are some players more popular than their own team ? 
-    - How do players impact the popularity of their teams ?
-    - How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
-    - Is there a fan base in each NBA Team ? (Fans : people frequently interacting with a certain NBA team on Youtube) 
-    - Is the MVP always the most popular player ? 
-    - What is the correlation between the results of a team and the engagement of its fans for big market teams and small market teams 
-    - Can we predict the results of a team thanks to it’s popularity ?
-    - Can we predict the player’s transfers based on their popularity ?
-    - Is there seasonality in the basketball videos ?
+## Reasearch Question and methodology:
+
+### PART 1 : Global analysis of sport videos and NBA videos available on the `Youniverse` dataset.
+- What is the evolution of the number of videos on Youtube within the study period ?
+    - Among all these videos, what is the proportion of videos discussing about sport ?
+    - Can we see an infatuation of the sport videos, and more precisely about basketball ?
+- Is there a tendency in the length of sport videos (and of NBA related videos) ?
+- How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
+- Are baskeball and NBA videos more commented, liked or disliked than other sports ?
+
+
+### PART 2 : Impact of the performances of NBA team.
+- What the impact of the main NBA matches and results on Youtube video interactions ?
+- How do fans react to a bad performance of a team ?
+- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments)
+- Are small market teams fans more loyal than big market teams ? (fans : people frequently interacting with a certain NBA team on Youtube)
+
+
+### PART 3 : In depth analysis within teams
+- Are some players more popular than their own team ?
+- Interaction of fans with NBA Youtube videos
+    - How do the fans react to a bad performance of a team ?
     - Are NBA fans following a single team or all of them ?
-    - How do the fans react to a bad performance of a team ? 
-    - How to develop a Fanbase on Youtube ? 
-    - Are small market teams fans more loyal than big market teams ? 
+- How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
+- Is the MVP always the most popular player ?
+
+- If we have time:
+    - Is there a fan base in each NBA Team ?
+    - Are NBA team following a single team or all of them ?
+    - Can we predict the player’s transfers based on their popularity ?
 
 
 ## Additional datasets
@@ -59,10 +70,6 @@ Atlanta Hawks|ATL|Hawks|Atlanta|Atlanta|1949
 Boston Celtics|BOS|Celtics|Boston|Massachusetts|1946
 Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
 Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
-
-
-## Methods
-
 
 ## Proposed timeline
 
