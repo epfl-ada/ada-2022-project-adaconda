@@ -35,9 +35,13 @@ The NBA season usually starts around October/November and ends around April/June
 - How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
 - Are basketball and NBA videos more commented, liked or disliked than other sports ?
 
-> To investigate this first part, we have used Dask to load the datasets. We initially decompressed all gzip files locally to use Dask. With Dask, we hence loaded all `.tsv` file and stored them in `.parquet` format which allows us to get files that are as light as the `.gzip` files but readable by Dask (in contrast with `.gzip` files which are not readable by Dask). Dask allows us to use lazy evaluation and to use multiple cores which means that the variable is not computed until the function call is followed by `.compute()` and when it is computed, it is distributed on all the allocated cores. Furthermore, when a variable is regularly used, we can use the `.persist()` to keep it in memory. This allows us to compute it only once and be able to use it according to our needs. All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
-
-> **FIXME** **FIXME** **FIXME** **FIXME** In addition to dask, we also investigate the possibility to store all of our data in a local database when we will further get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes. **FIXME** **FIXME** **FIXME** **FIXME** **FIXME**
+> In this first part, we have used Dask to load the datasets. 
+> DASK is a distributed data processing framework that's optimized to handle very big files. It implements a big part of the Pandas API which allows us to get very similar queries to what we would in Pandas. Under the hood it uses several Pandas data-frames, a scheduler and worker nodes in order to handle the computations. One major benefit of DASK is that computations are carried out lazily which means that DASK creates a computation tree and only does the actual computation when we explicitly tell it to.
+> We initially decompressed all gzip files locally to use Dask. This is because gzip does not use block-compression and therefore we can't load the data directly from the archive.
+>  With Dask, we loaded all `.tsv` files and stored them in `.parquet` format. Parquet gives us several benefits compared to csv/tsv files:
+> - Parquet uses block-compression by default which allows us to get files that are almost as small as the initial archives but that can be loaded directly into dask
+> - Parquet is a columnar data storage format. This allows us to open only a subset of columns from the datasets which makes the initial loading operation considerably faster.
+> All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
 
 
 ### PART 2 : Impact of the performances of NBA teams.
