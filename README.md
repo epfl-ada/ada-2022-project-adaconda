@@ -83,9 +83,8 @@ Here's a list of the relevant source files
 
 |Source file | Description|
 |---|---|
-|`notebook1.ipynb`           | The notebook you can run |
-|`notebook2.ipynb`           | The notebook you can run |
-|`notebook3.ipynb`           | The notebook you can run |
-|`notebook4.ipynb`           | The notebook you can run |
-|`notebook5.ipynb`           | The notebook you can run |
+|`1_data_loading_and_pre_processing.ipynb`           | The notebook used to load the data from uncompressed files and save them into parquet files|
+|`2_database_creation.ipynb`           | Notebook to load data and save them into our local SQL Database |
+|`3_data_exploration.ipynb`           | Notebook where the first data exploration is made and the first research questions are answered|
+|`api_nba.ipynb`           | Notebook where we scrapped data from websites and used NBA api to get data about NBA teams and matches |
 
