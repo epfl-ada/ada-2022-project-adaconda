@@ -31,7 +31,7 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 > In addition to dask, we also investigate the possibility to store all of our data in a local database when we will futher get data using SQL queries. The implementation where we loaded all the data by chunks and store them in the database can be found in the jupyter notebook titled `.2_database_creation.ipynb`. However the main drawback of this methods is that files are not compressed so it required more memory space on the hardrive (nearly 500 Go) and we cannot benefit from the parrallelization on mutliple cores. For these two reason, we have decided to pursue the project using Dask and to keep the database for verification purposes.
 
 
-### PART 2 : Impact of the performances of NBA team.
+### PART 2 : Impact of the performances of NBA teams.
 - What is the impact of the main NBA matches and results on Youtube video interactions ?
 - How do the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
 - How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments) 
@@ -39,7 +39,7 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 - Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities sush as New York/Chicago, where as small market teams usually represents small cities or cities where bascketball is not an important sport such as New Orleans/Memphis)
 
 
-### PART 3 : In depth analysis within teams
+### PART 3 : In depth analysis within NBA teams
 - Are some players more popular than their own team ?
 - How does NBA teams manage to be more popular ? Is this popularity affecting their results ? 
 - Is the championship MVP always the most popular player ? (MVP : Most Valueable Player) 
@@ -47,8 +47,8 @@ With the rise of Youtube since 2005, the number of videos available on the inter
 - Additional questions :
     - Is there a fan base in each NBA Team ?
     - Is the popularity of a player more related to his level or to the popularity of his team ? 
-    - Are offensive teams, teams that score many points during their matches, more popular than defensive teams ? (i.e. Bascketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
-    - Can we predict the player’s transfers based on their popularity ?
+    - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Bascketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
+    - Can we predict the players’ transfers based on their popularity ?
 
 
 ## Additional datasets
