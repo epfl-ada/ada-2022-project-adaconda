@@ -44,19 +44,16 @@ The NBA season usually starts around October/November and ends around April/June
 > All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
 
 
-> We explored the option of converting the Youniverse dataset to a local or hosted SQL database. In order to do that we loaded the data by chunks and saved them to the database. This approach requires a lot of storage (approximately 500 GB of data). Even though this approach is appealing because it allows us to build indices and create views in order to make our queries efficient, we decided to go against it and to work with DASK.
-
 ### PART 2 : Impact of the performances of NBA teams.
-- What is the impact of the main NBA matches and results on Youtube video interactions ?
-- How do the fans react to a good/bad performance of a team ? Do the fan interactions on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
-- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (popularity is measured with the number of like, dislikes, number of views and comments, attendance numbers and trends on google) 
+- How do the fans react to a good/bad performance of a team ? Do the fan interactions (likes/comments/views) on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
+- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (engagement is measured with the number of like, dislikes, number of views and comments, attendance numbers and trends on google) 
 - Are NBA fans usually following a single team or the whole championship ?
-- Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities such as New York/Chicago, where as small market teams usually represents small cities or cities where basketball is not an important sport such as New Orleans/Memphis)
+Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities such as New York/Chicago, where as small market teams usually represents small cities or cities where basketball is not an important sport such as New Orleans/Memphis)
 
 
 ### PART 3 : In depth analysis within NBA teams
 - Are some players more popular than their own team ? Is it the popularity of the players that improves the popularity of a team ? 
-- How do NBA teams manage to be more popular ? Is this popularity affecting their results ? 
+- Does the popularity of teams affect their results ? 
 - Is the championship MVP always the most popular player? (MVP : Most Valuable Player) 
 
 - Additional questions :
