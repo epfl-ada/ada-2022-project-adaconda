@@ -1,3 +1,6 @@
+import plotly.express as px
+
+
 BigMarketsSubset = {
     "LAL": ["los angeles", "la", "lakers"],
     "NY": ["knicks", "new york", "ny"],
@@ -100,4 +103,17 @@ Correspondence = {
     "New Orleans Pelicans": "NO",
     "Brooklyn Nets": "BKN",
     "Charlotte Hornets": "CHA",
+}
+
+
+# Default colors for our market size
+colors_plt = px.colors.qualitative.Plotly
+
+color_discrete_map = {
+    "small": colors_plt[1],
+    "big": colors_plt[2],
+    "medium": colors_plt[0],
+    "SMALL MARKET": colors_plt[1],
+    "BIG MARKET": colors_plt[2],
+    "MEDIUM MARKET": colors_plt[0],
 }
