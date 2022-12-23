@@ -109,3 +109,5 @@ Here's a list of the relevant source files
 |---|---|
 |`final_notebook.ipynb`           | Notebook used with all our data visualisations|
 
+### :warning:
+Our notebooks contain interactive plots which cannot be rendered on github. Please download the html version of the notebook to see all the graphs (they are mostly available on our website)
