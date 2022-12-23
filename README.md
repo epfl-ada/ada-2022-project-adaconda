@@ -1,4 +1,5 @@
-# Applied Data Analysis - Project ADACONDA - 2022-2023
+<h1 align="center">Applied Data Analysis - Project ADACONDA - 2022-2023 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+<p align="center">
 
 The purpose of this project is to analyze the [Youniverse](https://zenodo.org/record/4650046) database and to measure the impact of important NBA events on Youtube videos.
 
@@ -86,7 +87,7 @@ Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
 Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
 
-## Organization within the team: a list of internal milestones up until project Milestone P3.
+## Organization within the team: a list of internal milestones :raised_hands:.
 - Abiola
     - Data loading and pre-processing using Dask
     - Data scraping from NBA (winning rates statistics)
