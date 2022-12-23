@@ -92,8 +92,8 @@ Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
     - Website creation and design
 - Sami
     - Media exposure analysis of both small and big markets teams
-    - Number of videos per team
-    - Number of videos per market size
+    - Number of videos per team and market size
+    - Story telling
     - Number of fan-bases channels per team (quantification of engagement)
 - Zad
     - Data scraping from websites and NBA API
