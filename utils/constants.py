@@ -1,3 +1,34 @@
+BigMarketsSubset = {
+    "LAL": ["los angeles", "la", "lakers"],
+    "NY": ["knicks", "new york", "ny"],
+    "CHI": ["bulls", "chicago"],
+    "PHI": ["76ers", "seventy sixers", "seventysixers", "philadelphia", "phila"],
+    "DAL": ["mavericks", "mavs", "dallas"],
+    "ATT": ["hawks", "atlanta", "atl"],
+    "BOS": ["celtics", "boston"],
+    "GSW": [
+        "gsw",
+        "golden state warriors",
+        "golden state",
+        "warriors",
+        "dubs",
+        "dubs nation",
+        "dubsnation",
+    ],
+}
+
+SmallMarketsSubset = {
+    "MEM": ["memphis", "grizzlies"],
+    "NO": ["pelicans", "pels", "neworleans", "new orleans", "nola"],
+    "OKC": ["okc", "oklahomacitythunder", "oklahoma"],
+    "MIL": ["bucks", "milwaukee"],
+    "SA": ["spurs", "san antonio", "sanantonio"],
+    "UTAH": ["utah jazz", "utahjazz", "utah", "jazz"],
+    "IND": ["pacers", "indiana", "indi"],
+    "POR": ["trailblazers", "trail blazers", "blazers", "portland"],
+}
+
+
 BigMarkets = {
     "LAL": ["lakers", "lal"],
     "NY": ["knicks", "new york", "ny", "nyknicks"],
