@@ -86,33 +86,25 @@ Chicago Bulls|CHI|Bulls|Chicago|Illinois|1966
 Cleveland Cavaliers|CLE|Cavaliers|Cleveland|Ohio|1970
 
 
-## Proposed timeline
-|Date | Objective|
-|---|---|
-| 25-11-2022 | Implementation of parts I and II ready |
-| 02-12-2022 | Implementation and analysis of parts I and II |
-| 09-12-2022 | Implementation of part III |
-| 16-12-2022 | Website construction and story telling |
-| 23-12-2022 | M3 ready and submission |
-
 ## Organization within the team: a list of internal milestones up until project Milestone P3.
 - Abiola
     - Data loading and pre-processing using Dask
-    - Impact of real NBA calendar and matches on Youtube views (engagement of fans, on both big and small market teams)
-    - Loyalty of small teams and big teams 
-    - Popularity of the MVP player
+    - Data scraping from NBA (winning rates statistics)
+    - Impact of the winning rates of teams on the Youtube views
+    - Story telling
 - Etienne
-    - General analysis on sport videos
-    - Tendencies on basketball and NBA videos on Youtube
-    - Analysis results for offensive and defensive teams 
-    - Popularity of players versus popularity of teams
+    - General analysis on sport videos : tendencies on basketball and NBA videos on Youtube
+    - Impact of the winning rates of teams on the Youtube views 
+    - Website creation and design
 - Sami
-    - Analysis of the impact of the main NBA matches and results on Youtube video interactions
-    - Reaction of fans following a good / bad match
-    - Criteria for a team to be popular
+    - Media exposure analysis of both small and big markets teams
+    - Number of videos per team
+    - Number of videos per market size
+    - Number of fan-bases channels per team (quantification of engagement)
 - Zad
-    - Data scraping from website and NBA API
-    - Study of the comments, likes and dislikes of NBA related videos.
+    - Data scraping from websites and NBA API
+    - Impact of real NBA transfers Youtube views (engagement of fans, on both big and small market teams)
+    - Popularity of the MVP player
 
 
 
@@ -121,9 +113,5 @@ Here's a list of the relevant source files
 
 |Source file | Description|
 |---|---|
-|`1_data_loading_and_pre_processing.ipynb`           | Notebook used to load the data from uncompressed files and save them into parquet files|
-|`2_google_trends_api_database_creation.ipynb`           | Notebook to load popularity of teams from Google trends API |
-|`2_nba_database_creation.ipynb`           | Notebook to scrape data from NBA websites and APIs and save them into a local SQL (SQLite) Database |
-|`3_data_exploration.ipynb`           | Notebook where the first data exploration is made and the first research questions are answered|
-|`4_data_case_study.ipynb`           | Notebook where we do a case study comparing impact of winning percentage of Small and Big market teams |
+|`final_notebook.ipynb`           | Notebook used with all our data visualisations|
 
