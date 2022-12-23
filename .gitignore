@@ -6,6 +6,7 @@
 !/data/free_agent_moves/
 !/data/major_league_comparison.csv
 !/data/market_sizes.csv
+!/data/28_nba_team_results.csv
 
 #Ignore DS files
 **.DS_Store
