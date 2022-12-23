@@ -12,7 +12,7 @@ FERCHIOU Sami: sami.ferchiou@epfl.ch <br/>
 
 
 ## Abstract
-
+  
 This article examines the the disparities in viewership between small and large market teams in the National Basketball Association (NBA). Using YouNiverse data from 2005 to 2019, we tracked videos containing the tags “NBA” and “Basketball” to measure the growth in viewership over the past decade. We then used data from the TV market size for each team to classify them into small, medium, and large markets. By studying a subset of 8 small and 8 large market teams, we found that there are still significant differences between the viewership of the two categories. We argued that this could be explained by differences in financial means, media exposure, and local fan base. Our findings provide insight into the impact of streaming platforms on the NBA’s viewership and how the league can improve its reach and appeal to viewers of all market sizes.
 
 ## NBA overview
@@ -23,40 +23,15 @@ The **National Basketball Association (NBA)** is the world's most famous basketb
 ## Research questions and Methodology:
 
 ### PART 1 : Global analysis of sport videos and NBA videos available on the `Youniverse` dataset.
-- What is the evolution of the number of videos on Youtube within the study period ?
-    - Among these videos, what is the proportion of videos discussing about sport ?
-- Is there a tendency in the length of sport videos (and of NBA related videos) ?
-- Can we see an infatuation in the popularity of sports videos, and more precisely about NBA ?
-- How does the NBA calendar impact NBA videos on youtube ? Is there seasonality in the views of basketball videos ?
-- Are basketball and NBA videos more commented, liked or disliked than other sports ?
+- 
 
-> In this first part, we have used Dask to load the datasets. 
-> DASK is a distributed data processing framework that's optimized to handle very big files. It implements a big part of the Pandas API which allows us to get very similar queries to what we would in Pandas. Under the hood it uses several Pandas data-frames, a scheduler and worker nodes in order to handle the computations. One major benefit of DASK is that computations are carried out lazily which means that DASK creates a computation tree and only does the actual computation when we explicitly tell it to.
-> We initially decompressed all gzip files locally to use Dask. This is because gzip does not use block-compression and therefore we can't load the data directly from the archive.
->  With Dask, we loaded all `.tsv` files and stored them in `.parquet` format. Parquet gives us several benefits compared to csv/tsv files:
-> - Parquet uses block-compression by default which allows us to get files that are almost as small as the initial archives but that can be loaded directly into dask
-> - Parquet is a columnar data storage format. This allows us to open only a subset of columns from the datasets which makes the initial loading operation considerably faster.
-> All details about this initial process can be found in the jupyter notebook called `1_data_loading_and_pre_processing.ipynb`
+  
+### PART 2 : 
+- 
 
-
-### PART 2 : Impact of the performances of NBA teams.
-- How do the fans react to a good/bad performance of a team ? Do the fan interactions (likes/comments/views) on NBA Youtube videos change following a victory or defeat of their respective team ? (fans : people frequently interacting with a certain NBA team on Youtube)
-- How much does the results of a team impact the engagement of its fans for big market teams and small market team ? (engagement is measured with the number of like, dislikes, number of views and comments, attendance numbers and trends on google) 
-- Are NBA fans usually following a single team or the whole championship ?
-Are small market teams fans more loyal than big market teams ? Do fans still follow their team even if the it's results are not good ? (Small/Big market teams : NBA teams are characterized by their market size, i.e. big market teams usually represent big cities such as New York/Chicago, where as small market teams usually represents small cities or cities where basketball is not an important sport such as New Orleans/Memphis)
-
-
-### PART 3 : In depth analysis within NBA teams
-- Are some players more popular than their own team ? Is it the popularity of the players that improves the popularity of a team ? 
-- Does the popularity of teams affect their results ? 
-- Is the championship MVP always the most popular player? (MVP : Most Valuable Player) 
-
-- Additional questions :
-    - Is there a fan base in each NBA Team ?
-    - Is the popularity of a player more related to his level or to the popularity of his team ? 
-    - Are offensive teams, that score many points during their matches, more popular than defensive teams ? (i.e. Basketball teams can play with         different tactics and thus score more or less points during a certain match, independently of the final result of the match) 
-    - Can we predict the players’ transfers based on their popularity ?
-    - Do fans follow players or teams?
+  
+### PART 3 :
+- 
 
 
 ## Additional datasets
