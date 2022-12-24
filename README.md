@@ -47,6 +47,10 @@ The **National Basketball Association (NBA)** is the world's most famous basketb
 - How can we measure the media exposure of an NBA team on Youtube ? 
 - Is there bias that push people to follow a certain team instead of another ? 
 - Is the engagement of the fans similar for big and small market teams ? 
+  
+  
+  ## Data Story :bulb:
+  Please take a look at our data story [here](https://www.bigdatass.com).
 
 
 
