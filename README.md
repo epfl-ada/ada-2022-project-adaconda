@@ -49,8 +49,8 @@ The **National Basketball Association (NBA)** is the world's most famous basketb
 - Is the engagement of the fans similar for big and small market teams ? 
   
   
-  ## Data Story :bulb:
-  Please take a look at our data story [here](https://www.bigdatass.com).
+## Data Story :bulb:
+Please take a look at our data story [here](https://www.bigdatass.com).
 
 
 
